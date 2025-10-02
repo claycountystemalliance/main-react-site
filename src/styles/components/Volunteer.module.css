@@ -1,0 +1,53 @@
+/* ===========================================
+   VOLUNTEER / GET INVOLVED SECTION
+   =========================================== */
+
+   .getInvolved {
+    background: var(--gradient-dark);
+    color: var(--color-white);
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .involvementGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .involvementCard {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .involvementCard h4 {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-white);
+  }
+  
+  .involvementCard ul {
+    list-style: none;
+    color: var(--color-white);
+  }
+  
+  .involvementCard li {
+    margin-bottom: var(--spacing-xs);
+    padding-left: var(--spacing-md);
+    position: relative;
+  }
+  
+  .involvementCard li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .involvementGrid {
+      grid-template-columns: 1fr;
+    }
+  }

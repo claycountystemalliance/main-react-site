@@ -1,0 +1,145 @@
+/* ===========================================
+   HEADER & NAVIGATION
+   =========================================== */
+
+   .header {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    padding: 1rem 0;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo h1 {
+    font-size: var(--font-size-2xl);
+    font-weight: bold;
+    color: var(--color-white);
+  }
+  
+  /* Navigation Links */
+  .navLinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .navLinks a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity var(--transition-fast);
+  }
+  
+  .navLinks a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Mobile Menu Toggle Button */
+  .mobileMenuToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: var(--z-mobile-toggle);
+  }
+  
+  .mobileMenuToggle:hover {
+    opacity: 0.8;
+  }
+  
+  /* Mobile Menu Overlay */
+  .mobileMenuOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-mobile-overlay);
+  }
+  
+  .mobileMenuOverlay.active {
+    display: block;
+  }
+  
+  /* Mobile Close Button Container */
+  .closeButtonWrapper {
+    display: none;
+    padding: 0 !important;
+    border-bottom: none !important;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mobile Close Button */
+  .mobileCloseBtn {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    width: 100%;
+    text-align: right;
+    display: block;
+  }
+  
+  .mobileCloseBtn:hover {
+    opacity: 0.8;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .mobileMenuToggle {
+      display: block;
+    }
+  
+    .navLinks {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70%;
+      max-width: 300px;
+      height: 100vh;
+      background: var(--gradient-primary);
+      flex-direction: column;
+      padding: 2rem;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+      z-index: var(--z-mobile-menu);
+      gap: 0;
+    }
+  
+    .navLinks.active {
+      display: flex;
+    }
+  
+    .closeButtonWrapper {
+      display: block;
+    }
+  
+    .navLinks li {
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  
+    .navLinks a {
+      display: block;
+      padding: 1rem 0;
+      width: 100%;
+    }
+  }

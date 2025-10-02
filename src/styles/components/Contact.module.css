@@ -1,0 +1,48 @@
+/* ===========================================
+   CONTACT SECTION
+   =========================================== */
+
+   .contact {
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+  }
+  
+  .contact h3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-white);
+  }
+  
+  .contact p {
+    color: var(--color-white);
+    opacity: 0.9;
+  }
+  
+  .contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-large);
+  }
+  
+  .contactItem span:first-child {
+    font-size: 1.5rem;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .contactInfo {
+      flex-direction: column;
+      gap: var(--spacing-md);
+    }
+  }

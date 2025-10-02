@@ -1,0 +1,77 @@
+/* ===========================================
+   CSS VARIABLES - THEME CONFIGURATION
+   =========================================== */
+
+   :root {
+    /* Colors - Primary */
+    --color-primary: #2980b9;
+    --color-primary-dark: #2c3e50;
+    --color-primary-light: #3498db;
+    
+    /* Colors - Accent */
+    --color-accent: #e74c3c;
+    --color-success: #27ae60;
+    --color-warning: #ffc107;
+    
+    /* Colors - Gradients */
+    --gradient-primary: linear-gradient(135deg, #2980b9, #3498db);
+    --gradient-accent: linear-gradient(135deg, #fd79a8, #e84393);
+    --gradient-dark: linear-gradient(135deg, #2c3e50, #34495e);
+    --gradient-instagram: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    
+    /* Colors - Neutral */
+    --color-white: #ffffff;
+    --color-black: #1a1a1a;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-bg-light: #f8f9fa;
+    --color-border: #dddddd;
+    
+    /* Typography */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-base: 1rem;
+    --font-size-small: 0.9rem;
+    --font-size-large: 1.1rem;
+    --font-size-xl: 1.3rem;
+    --font-size-2xl: 1.8rem;
+    --font-size-3xl: 2.5rem;
+    --font-size-4xl: 3rem;
+    --line-height: 1.6;
+    --line-height-tight: 1.8;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 6rem;
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
+    --radius-xl: 25px;
+    --radius-full: 50%;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-md: 0 5px 20px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 25px rgba(0,0,0,0.15);
+    --shadow-xl: 0 5px 15px rgba(0,0,0,0.2);
+    
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-base: all 0.3s ease;
+    
+    /* Layout */
+    --max-width: 1200px;
+    --mobile-breakpoint: 768px;
+    
+    /* Z-Index Layers */
+    --z-header: 100;
+    --z-mobile-overlay: 999;
+    --z-mobile-menu: 1000;
+    --z-mobile-toggle: 1001;
+  }

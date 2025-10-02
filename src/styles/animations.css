@@ -1,0 +1,58 @@
+/* ===========================================
+   ANIMATIONS
+   =========================================== */
+
+   @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation Utility Classes */
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease;
+  }
+  
+  .animate-fadeInUp-delay-1 {
+    animation: fadeInUp 1s ease 0.2s both;
+  }
+  
+  .animate-fadeInUp-delay-2 {
+    animation: fadeInUp 1s ease 0.4s both;
+  }

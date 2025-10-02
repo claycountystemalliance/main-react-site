@@ -1,0 +1,128 @@
+/* ===========================================
+   GLOBAL STYLES & RESETS
+   =========================================== */
+
+/* Import variables first */
+@import './variables.css';
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Root */
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Spacing */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary-dark);
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+/* Lists */
+ul, ol {
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Buttons - Global */
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--radius-xl);
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-base);
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.2);
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Section Title - Global */
+.section-title {
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-light {
+  color: var(--color-text-light);
+}
+
+.bg-light {
+  background: var(--color-bg-light);
+}
+
+.bg-white {
+  background: var(--color-white);
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

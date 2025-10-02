@@ -70,17 +70,14 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: var(--z-mobile-overlay);
   }
-  
+  /*
   .mobileMenuOverlay.active {
     display: block;
-  }
+  }*/
   
-  /* Mobile Close Button Container */
+  /* Mobile Close Button Container - now a div, not li */
   .closeButtonWrapper {
     display: none;
-    padding: 0 !important;
-    border-bottom: none !important;
-    margin-bottom: 1rem;
   }
   
   /* Mobile Close Button */
@@ -90,7 +87,7 @@
     color: var(--color-white);
     font-size: 2rem;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 1rem;
     line-height: 1;
     width: 100%;
     text-align: right;
@@ -117,18 +114,23 @@
       height: 100vh;
       background: var(--gradient-primary);
       flex-direction: column;
-      padding: 2rem;
+      padding: 0;
       box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
       z-index: var(--z-mobile-menu);
       gap: 0;
+      overflow-y: auto;
     }
   
     .navLinks.active {
       display: flex;
     }
   
+    /* Show close button wrapper in mobile */
     .closeButtonWrapper {
       display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0;
     }
   
     .navLinks li {
@@ -139,7 +141,7 @@
   
     .navLinks a {
       display: block;
-      padding: 1rem 0;
+      padding: 1rem 2rem;
       width: 100%;
     }
   }

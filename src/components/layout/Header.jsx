@@ -30,8 +30,8 @@ export default function Header() {
           </button>
           
           <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.active : ''}`}>
-            {/* Close button INSIDE the menu */}
-            <li className={styles.closeButtonWrapper}>
+            {/* Close button as a separate div, NOT inside li */}
+            <div className={styles.closeButtonWrapper}>
               <button 
                 className={styles.mobileCloseBtn}
                 onClick={closeMobileMenu}
@@ -39,7 +39,7 @@ export default function Header() {
               >
                 ✕
               </button>
-            </li>
+            </div>
             <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
             <li><Link to="/about" onClick={closeMobileMenu}>About Us</Link></li>
             <li><Link to="/programs" onClick={closeMobileMenu}>Programs</Link></li>
